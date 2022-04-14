@@ -85,5 +85,12 @@
                 break;
         }
     ?>
+
+        <!-- DATA E HORA  -->
+        <?php
+        $data = date("d/m/Y"); //DATA DO SISTEMA
+        $time = date("h:i:s"); //HORA DO SISTEMA
+        print "Data e hora do sistema: $data $time";
+    ?>
 </body>
 </html>

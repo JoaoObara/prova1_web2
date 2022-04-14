@@ -8,8 +8,11 @@
     <title>Home Page</title>
 </head>
 <body class="centro">
+    <!-- TITULO -->
+    <H1> Wiki de Departamentos </H1>
     <!-- IMAGEM QUE REPRESENTRA A EMPRESA -->
-    <img src="image/empresa.jpg"><br/>
+    <img src="image/logo.png" width="20%" height="20%">
+    <img src="image/empresa.jpg" width="60%" height><br/>
 
     <!-- PARAGRAFO COM A FUNCAO DA EMPRESA -->
     <h1>Função da empresa</h1>
