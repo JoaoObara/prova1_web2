@@ -7,7 +7,7 @@
 
     <title> Departamento</title>
 </head>
-<body> 
+<body > 
 
     <!-- TITULO -->
     <H1> Wiki de Departamentos </H1>
