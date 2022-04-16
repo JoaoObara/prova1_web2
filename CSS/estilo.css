@@ -4,7 +4,19 @@ body.centro{
 
 .titulo{
     text-align: center;
-    text-decoration-color: chartreuse;
-    font-size: larger;
-    font-style: italic;
+    font-size: 50px;
+    color: rgb(207, 142, 43);
+    /* border: 5px dashed rgba(0, 0, 0, 0.132); */
+}
+
+body{
+    background-color: rgb(183, 183, 183);
+}
+
+nav{
+    font-size: 18px;
+}
+
+p{
+    font-size: 18px;
 }

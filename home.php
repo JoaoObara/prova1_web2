@@ -21,21 +21,31 @@
     
     
     <!-- SOMENTE PARA EVITAR ERROS NO GRID -->
-    <nav class="grid">  </nav>
+    <nav class="grid"> 
+        <ul>  <b>Nevagação:</b>
+            <li><a href="index.php"> Sair </a></li>
+        </ul> 
+    </nav>
 
 
     <main class="grid">
         <!-- TITULO -->
-    <H1 class="titulo"> Wiki de Departamentos </H1>
+    <H1 class="titulo" > Wiki de Departamentos</H1>
 
         <!-- PARAGRAFO COM A FUNCAO DA EMPRESA -->
-        <h2>Função da empresa</h2>
-        <p> Esta empresa é voltada ....</p>
+
+        <p>
+        <b>Função da empresa:</b>
+        <br />&nbsp A empresa tem como função ajudar seus clientes a lidar com suas finanças
+         e os aconselhar em seus investimentos. Também faz parte desse serviço informar sobre 
+         as tendências econômicas, as mudanças na legislação e os riscos associados.</p>
+         <br /> <br />
             
         <!-- FORMULARIO  -->
         <form method="post" action="departament.php">
-            <select name="departamentos">
-                <option>Escolha um departamento</option>
+            <b> Escolha um departamento </b>
+            <select name="departamentos">     
+                <option>Departamento: </option>
                 <option>Setor Administrativo</option>
                 <option>Setor Financeiro</option>
                 <option>Recursos Humanos</option>

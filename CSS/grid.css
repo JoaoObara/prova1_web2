@@ -13,7 +13,7 @@ body{
 }
 
 .gridlogo{
-    background-color: green;
+    /* background-color: green; */
     grid-area: logo;
     display: flex;
     flex-direction: row;
@@ -22,7 +22,7 @@ body{
 }
 
 .gridimg{
-    background-color: rgb(174, 88, 18);
+    /* background-color: rgb(174, 88, 18); */
     grid-area: img;
     display: flex;
     flex-direction: row;
@@ -30,23 +30,23 @@ body{
 }
 
 main.grid{
-    background-color: red;
+    /* background-color: red; */
     grid-area: main;
 }
 
 nav.grid{
-    background-color: bisque;
+    /* background-color: bisque; */
     grid-area: nav;
 }
 
 footer.grid{
-    background-color: gray;
+    /* background-color: gray; */
     grid-area: footer ;
     direction: rtl;
     padding-right: 5px;
 }
 
 .gridx{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     grid-area: gridx;
 }

@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/grid.css">
 
     <title> Departamento</title>
 </head>
-<body > 
 
-    <!-- TITULO -->
-    <H1> Wiki de Departamentos </H1>
+<body>
+
     <!-- LOGO -->
-    <image src="image/logo.png" width="20%" height="20%"> <br/> <br/>
+    <container class="gridlogo">
+        <img src="image/logo.png" width="90%" height="95%">
+    </container>
+    <!-- IMAGEM QUE REPRESENTRA A EMPRESA -->
+    <container class="gridimg">
+        <img src="image/empresa.jpg" width="95%" height="100%">
+    </container>
+
+
     <!-- VOLTAR A PAGINA INICIAL -->
-    <nav> <a href="home.php"> Paginal Inicial </a>
+    <nav class="grid"> 
+        <ul>  <b>Navegação:</b>
+            <li><a href="home.php"> Paginal Inicial </a> </li>
+            <li><a href="index.php"> Sair </a></li>
+        </ul> 
+    </nav>
+
+
     <!-- TRATAMENTO DE ESCOLHA -->
-    <?php 
-    $escolha = $_POST["departamentos"];
+    <main class="grid">
+        <!-- TITULO -->
+        <H1 class="titulo"> Wiki de Departamentos</H1>
+
+        <?php
+        $escolha = $_POST["departamentos"];
 
         switch ($escolha) {
             case "Setor Administrativo":
                 print "<h1> $escolha </h1>
-                <p> O Setor Administrativo responde ao planejamento estratégico da empresa, o que inclui a atribuição de tarefas e,
+                <p> &nbsp &nbsp &nbsp O Setor Administrativo responde ao planejamento estratégico da empresa, o que inclui a atribuição de tarefas e,
                  também, a análise estratégica de dados. Com isso, torna-se uma área fundamental para a tomada de decisão focada no
                   crescimento sustentável e coletivo da organização. Não à toa, é o setor que mais se assemelha às funções do coração: 
                   ele bombeia todas as tarefas de maneira coordenada
@@ -31,7 +52,7 @@
                 break;
             case "Setor Financeiro":
                 print "<h1> $escolha </h1>
-                <p> O financeiro é uma das principais áreas de uma empresa — e, talvez, uma que tem as maiores cobranças, literalmente.
+                <p> &nbsp &nbsp &nbsp O financeiro é uma das principais áreas de uma empresa — e, talvez, uma que tem as maiores cobranças, literalmente.
                  Geralmente, é um setor complementar ou acoplado ao administrativo, já que todas as decisões estão profundamente alinhadas
                   à necessidade de capital para o investimento.
                 Além disso, o financeiro cuida da gestão do fluxo de caixa e da saúde financeira da empresa. Entre outras atividades, como:
@@ -47,7 +68,7 @@
                 break;
             case "Recursos Humanos":
                 print "<h1> $escolha </h1>
-                <p> O setor de Recursos Humanos é um dos setores chave da empresa. Afinal de contas, o departamento tem adquirido mais e mais 
+                <p> &nbsp &nbsp &nbsp O setor de Recursos Humanos é um dos setores chave da empresa. Afinal de contas, o departamento tem adquirido mais e mais 
                 relevância na tomada de decisões-chave e estratégicas. Em parte, porque o valor da gestão de pessoas tem mostrado o quanto 
                 isso influencia, diretamente, na melhora coletiva da organização e de uma série de índices, como:
                 <br>•	produtividade;
@@ -63,7 +84,7 @@
                 break;
             case "Setor Comercial":
                 print "<h1> $escolha </h1>
-                <p> É uma das principais áreas da nossa empresa porque, além de cuidar a relação com o cliente e do processo de vendas, o 
+                <p> &nbsp &nbsp &nbsp É uma das principais áreas da nossa empresa porque, além de cuidar a relação com o cliente e do processo de vendas, o 
                 marketing costuma fazer parte do departamento — ainda que indiretamente. O enfoque do setor é a realização dos clientes e 
                 dos prospectos. Trata-se de um departamento com ação de destaque, já que planeja ações externas, mas preocupa-se com o que 
                 ocorre internamente também. O que permite ações em conjunto com o próprio RH.
@@ -74,7 +95,7 @@
                 break;
             case "Setor Operacional":
                 print "<h1> $escolha </h1>
-                <p> Para muitas organizações — em especial, no setor industrial —, o setor operacional é uma das principais áreas de uma 
+                <p> &nbsp &nbsp &nbsp Para muitas organizações — em especial, no setor industrial —, o setor operacional é uma das principais áreas de uma 
                 empresa. Afinal, é o departamento que cria forma e volume para organizações que comercializam produtos para os clientes.
                 Isso engloba também as gestões de estoque, logística e maquinário. São, portanto, muitas vertentes que demandam profissionais 
                 qualificados para que o fluxo de trabalho transcorra sem imprevistos.
@@ -84,13 +105,20 @@
                 header("Location: home.php");
                 break;
         }
-    ?>
+        ?>
+    </main>
 
-        <!-- DATA E HORA  -->
+    <!-- SOMENTE PARA EVITAR ERROS NO GRID -->
+    <container class="gridx"> </container>
+
+
+    <!-- DATA E HORA  -->
+    <footer class="grid">
         <?php
         $data = date("d/m/Y"); //DATA DO SISTEMA
         $time = date("h:i:s"); //HORA DO SISTEMA
-        print "Data e hora do sistema: $data $time";
-    ?>
+        print "<h3>Data e hora de acesso ao sistema: $data $time </h3>"; ?>
+    </footer>
 </body>
+
 </html>
