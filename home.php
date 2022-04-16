@@ -22,7 +22,7 @@
     
     <!-- SOMENTE PARA EVITAR ERROS NO GRID -->
     <nav class="grid"> 
-        <ul>  <b>Nevagação:</b>
+        <ul>  <b>Navegação:</b>
             <li><a href="index.php"> Sair </a></li>
         </ul> 
     </nav>
