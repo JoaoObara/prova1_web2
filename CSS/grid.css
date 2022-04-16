@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    display: grid;
+
+    /* CONFIGURAÇÃO DA GRID */
+    grid-template-areas: 
+    "logo img img gridx"
+    "nav main main gridx"
+    "nav main main gridx" 
+    "footer footer footer footer";
+    grid-template-rows: 31vh 31vh 31vh 7vh;
+    grid-template-columns: 20vw 30vw 30vw 20vw;
+}
+
+.gridlogo{
+    background-color: green;
+    grid-area: logo;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 3px;
+}
+
+.gridimg{
+    background-color: rgb(174, 88, 18);
+    grid-area: img;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main.grid{
+    background-color: red;
+    grid-area: main;
+}
+
+nav.grid{
+    background-color: bisque;
+    grid-area: nav;
+}
+
+footer.grid{
+    background-color: gray;
+    grid-area: footer ;
+    direction: rtl;
+    padding-right: 5px;
+}
+
+.gridx{
+    background-color: blueviolet;
+    grid-area: gridx;
+}

@@ -1,3 +1,10 @@
-.centro{
+body.centro{
     text-align: center;
+}
+
+.titulo{
+    text-align: center;
+    text-decoration-color: chartreuse;
+    font-size: larger;
+    font-style: italic;
 }
