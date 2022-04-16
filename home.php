@@ -35,14 +35,20 @@
         <!-- PARAGRAFO COM A FUNCAO DA EMPRESA -->
 
         <p>
-        <b>Função da empresa:</b>
+        <b>Sobre a empresa:</b>
         <br />&nbsp A empresa tem como função ajudar seus clientes a lidar com suas finanças
          e os aconselhar em seus investimentos. Também faz parte desse serviço informar sobre 
-         as tendências econômicas, as mudanças na legislação e os riscos associados.</p>
-         <br /> <br />
+         as tendências econômicas, as mudanças na legislação e os riscos associados.
+        </p>
+
+        <p> <b>Função da página:</b>
+        <br />&nbsp Está página tem a função de direcionar o usuário às informações de seu respectivo 
+        departamento, basta selecionar um item da combobox e apertar o botão buscar.
+        </p>
+         <br /> <br /> <br />
             
         <!-- FORMULARIO  -->
-        <form method="post" action="departament.php">
+        <form method="get" action="departament.php">
             <b> Escolha um departamento </b>
             <select name="departamentos">     
                 <option>Departamento: </option>

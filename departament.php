@@ -38,7 +38,7 @@
         <H1 class="titulo"> Wiki de Departamentos</H1>
 
         <?php
-        $escolha = $_POST["departamentos"];
+        $escolha = $_GET["departamentos"];
 
         switch ($escolha) {
             case "Setor Administrativo":
